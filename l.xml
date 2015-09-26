@@ -22,8 +22,14 @@
             <field name="OBJECT">LEFTFRONT</field>
           </block>
         </value>
+        <statement name="DO0">
+          <block type="movement_forward" id="147"></block>
+        </statement>
       </block>
     </next>
+  </block>
+  <block type="math_number" id="154" x="281" y="312">
+    <field name="NUM">0</field>
   </block>
   <block type="math_number" id="75" x="-198" y="518">
     <field name="NUM">0</field>
