@@ -23,13 +23,33 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="147"></block>
+          <block type="movement_forward" id="147">
+            <next>
+              <block type="robot_delay" id="224" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="154">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_reverse" id="222">
+                    <next>
+                      <block type="robot_delay" id="226" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="233">
+                            <field name="NUM">2000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </statement>
       </block>
     </next>
-  </block>
-  <block type="math_number" id="154" x="281" y="312">
-    <field name="NUM">0</field>
   </block>
   <block type="math_number" id="75" x="-198" y="518">
     <field name="NUM">0</field>
