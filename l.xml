@@ -1,27 +1,27 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="147" x="75" y="279">
+  <block type="movement_forward" id="1" x="75" y="279">
     <next>
-      <block type="robot_delay" id="224" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="154">
+          <block type="math_number" id="3">
             <field name="NUM">2000</field>
           </block>
         </value>
         <next>
-          <block type="movement_reverse" id="222">
+          <block type="movement_reverse" id="4">
             <next>
-              <block type="robot_delay" id="226" inline="true">
+              <block type="robot_delay" id="5" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="233">
+                  <block type="math_number" id="6">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_left" id="253">
+                  <block type="movement_left" id="7">
                     <next>
-                      <block type="robot_delay" id="255" inline="true">
+                      <block type="robot_delay" id="8" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="282">
+                          <block type="math_number" id="9">
                             <field name="NUM">0</field>
                           </block>
                         </value>
@@ -36,8 +36,8 @@
       </block>
     </next>
   </block>
-  <block type="movement_reverse" id="243" x="-109" y="454"></block>
-  <block type="math_number" id="75" x="-198" y="518">
+  <block type="movement_reverse" id="10" x="-109" y="454"></block>
+  <block type="math_number" id="11" x="-198" y="518">
     <field name="NUM">0</field>
   </block>
 </xml>
