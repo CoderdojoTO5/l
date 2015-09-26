@@ -1,1 +1,31 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="27" inline="true" x="141" y="165">
+    <value name="TIMES">
+      <block type="sensor_button" id="51">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="led_select" id="130" inline="true">
+        <field name="ACTION">ON</field>
+        <value name="LED">
+          <block type="math_number" id="137">
+            <field name="NUM">75</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="34" inline="false">
+        <value name="IF0">
+          <block type="sensor_object" id="68">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="math_number" id="75" x="-198" y="518">
+    <field name="NUM">0</field>
+  </block>
+</xml>
