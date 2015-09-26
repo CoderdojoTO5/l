@@ -66,16 +66,7 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="robot_delay" id="2" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="3">
-                <field name="NUM">2000</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_forward" id="237"></block>
-            </next>
-          </block>
+          <block type="movement_forward" id="237"></block>
         </statement>
         <next>
           <block type="robot_delay" id="269" inline="true">
