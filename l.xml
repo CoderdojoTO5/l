@@ -25,6 +25,9 @@
                             <field name="NUM">0</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="movement_stop" id="21"></block>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -35,9 +38,5 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="movement_reverse" id="10" x="-109" y="454"></block>
-  <block type="math_number" id="11" x="-198" y="518">
-    <field name="NUM">0</field>
   </block>
 </xml>
