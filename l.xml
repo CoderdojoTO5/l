@@ -1,53 +1,25 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="27" inline="true" x="141" y="165">
-    <value name="TIMES">
-      <block type="sensor_button" id="51">
-        <field name="OBJECT">ENTER</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="led_select" id="130" inline="true">
-        <field name="ACTION">ON</field>
-        <value name="LED">
-          <block type="math_number" id="137">
-            <field name="NUM">75</field>
-          </block>
-        </value>
-      </block>
-    </statement>
+  <block type="movement_forward" id="147" x="333" y="331">
     <next>
-      <block type="controls_if" id="34" inline="false">
-        <value name="IF0">
-          <block type="sensor_object" id="68">
-            <field name="OBJECT">LEFTFRONT</field>
+      <block type="robot_delay" id="224" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="154">
+            <field name="NUM">2000</field>
           </block>
         </value>
-        <statement name="DO0">
-          <block type="movement_forward" id="147">
+        <next>
+          <block type="movement_reverse" id="222">
             <next>
-              <block type="robot_delay" id="224" inline="true">
+              <block type="robot_delay" id="226" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="154">
+                  <block type="math_number" id="233">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
-                <next>
-                  <block type="movement_reverse" id="222">
-                    <next>
-                      <block type="robot_delay" id="226" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="233">
-                            <field name="NUM">2000</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </next>
   </block>
